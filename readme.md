@@ -1,7 +1,6 @@
  
 ##**Security Laravel Permission**
 
-### Repositorio: Servicio en Línea
 
 ### Configuración:
 | Requisitos   			| Versión    			        |
@@ -29,7 +28,7 @@ __Esta guia de instalación presupone que usted tiene istaladas y configuradas l
 * Clonar repositorio.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-git clone https://lex1102@bitbucket.org/comfamiliarhuila/servicioenlinea.git
+git clone https://github.com/AlexanderLozano17/Security-Laravel-Permission.git
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * cuando se descargue ubicarse en la carpeta del proyecto ejecutar el comando
