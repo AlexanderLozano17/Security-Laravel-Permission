@@ -5,8 +5,22 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
+
+                @if(count($errors)>0)
+                    <div class="alert alert-danger" role="alert">
+                        <ul>
+                            @foreach($errors->all() as $error)
+                                
+                                <li>{{ $error }}</li>
+                                
+                            @endforeach   
+                        </ul>
+                    </div>                 
+                @endif
+
+
                 <div class="card-header">
-                    Nuevo usario
+                    Editar usario
                 </div>
 
                 <div class="card-body">
@@ -16,22 +30,22 @@
                         @method('PUT')
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" name="name" required class="form-control" value="{{ $usuario->name }}">
+                            <input type="text" name="name" class="form-control" value="{{ $usuario->name }}">
                         </div>
 
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" name="email" required class="form-control" value="{{ $usuario->email }}">
+                            <input type="email" name="email" class="form-control" value="{{ $usuario->email }}">
                         </div>
 
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="text" name="password" required class="form-control">
+                            <input type="text" name="password" class="form-control">
                         </div>
 
                         <div class="form-group">
                             <label for="rol">Password</label>
-                            <select name="rol" required class="form-control">
+                            <select name="rol" class="form-control">
                                 @foreach ($roles as $key => $value)
                                     @if ($usuario->hasRole($value)) 
                                         <option value="{{ $value }}" selected>{{ $value }}</option>
